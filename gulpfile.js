@@ -10,7 +10,7 @@ gulp.task('default', function() {
 gulp.task('build', function() {
   gulp.src('browserify-johnny-five.js')
     .pipe(browserify({
-      ignore: ['board-io', 'debug', 'es6-shim']
+      ignore: ['board-io', 'debug']
     }))
     .pipe(gulp.dest('./build'));
 });
